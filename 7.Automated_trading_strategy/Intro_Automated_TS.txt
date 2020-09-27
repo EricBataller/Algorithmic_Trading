@@ -1,0 +1,19 @@
+Trading system which can extract data periodically, perform analysis, exectue trading strategy and place/close orders 
+in an automated fashion.
+
+Direct access to stock exchange:
+      - Mandatory for High freq. trading system (expensive)
+      - Colocation - put your server in stock exchange's network (most likely in the same permises as their own servers)
+      - Gain milliseconds in trade execution downtime over competitors.
+API Trading:
+      - Let's you connect with broker to obtain real time pricing and account information and place trade orders.
+      - RESTful APIs
+      - Performance is similar to trading using broker's interface
+      - Fairly cheap to put together an automated traiding system using API trading
+      - Many brokers provide free demo API trading accounts or other promotions
+      - Always test the performance of the API interface before buying subscription
+      - FXCM demo account (will discuss)
+Running your code continuously/periodically:
+      - Crontab (Linux machine)
+      - Task Scheduler (Windows machine)
+      - Various python libraries can let you run your scripts periodically ('Time' library- will discuss)
